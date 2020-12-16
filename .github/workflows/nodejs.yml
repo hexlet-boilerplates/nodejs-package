@@ -29,8 +29,8 @@ jobs:
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build
-        # Install and build project
+      - name: npm install
+        # Install project
         run: |
           make install
         # Add environment variables
