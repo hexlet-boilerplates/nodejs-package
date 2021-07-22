@@ -7,13 +7,13 @@
 ## Setup
 
 ```sh
-$ make install
+make install
 ```
 
 ## Run tests
 
 ```sh
-$ make test
+make test
 ```
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=nodejs-package)
