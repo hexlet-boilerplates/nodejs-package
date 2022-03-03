@@ -32,7 +32,7 @@ jobs:
         # The Node.js version to configure
         with:
           node-version: ${{ matrix.node-version }}
-          cache: true
+          cache: 'npm'
       - run: make install
       - run: make lint
       - run: make test
