@@ -37,7 +37,7 @@
     "eslint-plugin-jest": "^26.1.5",
     "jest": "^28.0.3",
     "jest-cli": "^28.0.3",
-    "npm-check-updates": "^12.5.11",
+    "npm-check-updates": "^16.0.5",
     "simple-git-hooks": "^2.7.0"
   }
 }
