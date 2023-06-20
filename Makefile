@@ -8,11 +8,13 @@ install-deps:
 	npm ci
 
 test:
-	npm test --test-reporter=spec
+	npm test
+
+test-spec:
+	npm run test-spec
 
 test-coverage:
-	# TODO: set global flag --experimental-test-coverage
-	npm test
+	npm run test-coverage
 
 lint:
 	npx eslint .

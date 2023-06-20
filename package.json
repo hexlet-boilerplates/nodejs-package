@@ -9,10 +9,12 @@
     "pre-push": "make lint"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=20"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "test-spec": "node --test --test-reporter spec",
+    "test-coverage": "node --test --experimental-test-coverage"
   },
   "repository": {
     "type": "git",
