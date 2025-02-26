@@ -9,10 +9,11 @@
     "pre-push": "npx lint-staged"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=21"
   },
   "scripts": {
-    "test": "npx jest"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -26,24 +27,25 @@
   "type": "module",
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
-    "debug": "^4.3.5",
-    "lodash": "^4.17.21"
+    "@stylistic/eslint-plugin": "^4.1.0",
+    "debug": "^4.4.0",
+    "es-toolkit": "^1.32.0",
+    "jiti": "^2.4.2",
+    "vitest": "^3.0.7"
   },
   "lint-staged": {
     "*.js": "eslint --fix"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.7.0",
-    "@jest/globals": "^29.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "globals": "^15.8.0",
-    "jest": "^29.7.0",
-    "jest-cli": "^29.7.0",
-    "lint-staged": "^15.2.7",
-    "npm-check-updates": "^16.14.20",
-    "simple-git-hooks": "^2.11.1"
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.0.0",
+    "lint-staged": "^15.4.3",
+    "npm-check-updates": "^17.1.15",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0"
   }
 }

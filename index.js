@@ -1,5 +1,5 @@
 // @ts-check
 
-import half from './src/half.js';
+import half from './src/half.js'
 
-export default half;
+export default half
