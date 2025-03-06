@@ -2,7 +2,7 @@ import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import { Linter } from 'eslint'
+// import { Linter } from 'eslint'
 
 export default [
   stylistic.configs.recommended,

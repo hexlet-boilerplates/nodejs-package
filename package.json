@@ -37,6 +37,7 @@
     "*.js": "eslint --fix"
   },
   "devDependencies": {
+    "release-it": "^18.1.2",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.21.0",
     "eslint": "^9.21.0",

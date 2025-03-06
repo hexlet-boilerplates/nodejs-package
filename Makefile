@@ -20,6 +20,6 @@ lint:
 	npx eslint .
 
 publish:
-	npm publish
+	npx release-it
 
 .PHONY: test
