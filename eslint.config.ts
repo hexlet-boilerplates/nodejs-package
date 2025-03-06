@@ -15,6 +15,9 @@ export default [
     ],
   },
   {
+    ignores: ['dist/'],
+  },
+  {
     languageOptions: {
       globals: globals.node,
       parserOptions: {
