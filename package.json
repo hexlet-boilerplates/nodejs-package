@@ -37,14 +37,15 @@
     "*.js": "eslint --fix"
   },
   "devDependencies": {
-    "release-it": "^18.1.2",
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.21.0",
+    "@vitest/coverage-v8": "^3.1.1",
     "eslint": "^9.21.0",
     "eslint-plugin-import": "^2.31.0",
     "globals": "^16.0.0",
     "lint-staged": "^15.4.3",
     "npm-check-updates": "^17.1.15",
+    "release-it": "^18.1.2",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
