@@ -1,8 +1,11 @@
 # nodejs-package
 
 [![Node CI](https://github.com/hexlet-boilerplates/nodejs-package/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-boilerplates/nodejs-package/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/dfc50c2d88cd46d069c1/maintainability)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/dfc50c2d88cd46d069c1/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/test_coverage)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=bugs)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=coverage)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
 
 ## Setup
 
