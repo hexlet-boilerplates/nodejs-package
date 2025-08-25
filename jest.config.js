@@ -10,7 +10,7 @@ export default {
 
   // Какие файлы включать в покрытие
   collectCoverageFrom: [
-    'src/**/*.{js}',
+    'src/**/*.js',
   ],
   transform: {},
 }
