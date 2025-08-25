@@ -18,12 +18,12 @@ jobs:
     strategy:
       # Node versions list
       matrix:
-        node-version: [20.x]
+        node-version: [20.x, 22.x, 24.x]
 
     steps:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         # Step's name
       - name: Use Node.js ${{ matrix.node-version }}
         # Configures the node version used on GitHub-hosted runners
