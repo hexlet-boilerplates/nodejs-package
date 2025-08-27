@@ -7,6 +7,22 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=coverage)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
 
+## Requirements
+
+* Unix system (Macos/Linux)
+* Nodejs 22.x+
+* Make
+
+## Description
+
+Boilerplate for javascript projects with:
+
+* Javascript (nodejs)
+* Eslint
+* Jest
+
+For Typescript boilerplate see [typescript-package](https://github.com/hexlet-boilerplates/typescript-package)
+
 ## Setup
 
 ```bash
@@ -19,13 +35,15 @@ make install
 make test
 ```
 
+See other commands in [Makefile](./Makefile)
+
 ## Run tests with coverage
 
 See [sonar-project.properties](./sonar-project.properties#1:2):
 
 ```bash
 make test-coverage
-# see ./coverage dir
+# see ./coverage
 ```
 
 ---
