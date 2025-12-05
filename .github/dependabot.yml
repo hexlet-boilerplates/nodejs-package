@@ -1,0 +1,69 @@
+---
+# Dependabot configuration
+#
+# This file configures automated dependency updates.
+# The goal is to:
+#  - keep tooling (devDependencies) up to date without noise
+#  - separate runtime (production) dependencies for safer review
+#  - reduce the number of PRs by batching minor and patch updates
+#  - highlight potentially breaking (major) updates in dedicated PRs
+#
+# Recommended documentation:
+#
+# 1) Dependabot Options Reference — full list of available keys,
+#    including "dependency-type", "groups", "update-types", etc.
+#    https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+#
+# 2) Optimizing pull request creation — best practices for grouping updates,
+#    controlling frequency, and limiting noise in development teams.
+#    https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/optimizing-pr-creation-version-updates
+#
+# These links explain *why* we split dev/prod dependencies,
+# *how* grouping works, and what update strategies GitHub recommends
+# for real-world projects.
+#
+version: 2
+updates:
+  # 1) Keep GitHub Actions workflows up to date
+  - package-ecosystem: github-actions
+    directory: /  # Look for workflow files in the repo root
+    schedule:
+      interval: weekly  # Check for updates once a week
+    labels: [dependencies, automated, actions]  # Labels added to PRs
+    groups:
+      actions-minor-patch:
+        # Group all non-breaking (minor + patch) updates into a single PR
+        update-types: [minor, patch]
+      actions-major:
+        # Major updates are potentially breaking → separate PR
+        update-types: [major]
+  # 2) Dev dependencies: tools only (lint, tests, build, etc.)
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly  # Weekly check for npm devDependencies
+    allow:
+      # Only dependencies from "devDependencies" in package.json
+      - dependency-type: development
+    labels: [dependencies, automated, dev]
+    groups:
+      npm-dev-minor-patch:
+        # Group dev minor + patch updates to reduce PR noise
+        update-types: [minor, patch]
+      npm-dev-major:
+        # Keep major dev updates separate so they can be tested carefully
+        update-types: [major]
+  # 3) Runtime / production dependencies used by the package itself
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly  # Weekly check for npm runtime deps
+    allow:
+      # Only dependencies from "dependencies" in package.json
+      - dependency-type: production
+    labels: [dependencies, automated, prod]
+    groups:
+      npm-runtime-minor-patch:
+        # Group non-breaking runtime updates together
+        update-types: [minor, patch]
+        # (Major runtime updates will be opened as separate PRs by default)
