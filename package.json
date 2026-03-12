@@ -28,23 +28,23 @@
   "type": "module",
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
-    "es-toolkit": "^1.39.10"
+    "es-toolkit": "^1.45.1"
   },
   "lint-staged": {
     "*.js": "eslint --fix"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.34.0",
-    "@jest/globals": "^30.0.5",
-    "@stylistic/eslint-plugin": "^5.2.3",
-    "eslint": "^9.34.0",
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
+    "@jest/globals": "^30.3.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.0.3",
     "eslint-plugin-import": "^2.32.0",
-    "globals": "^16.3.0",
-    "jest": "^30.0.5",
-    "lint-staged": "^16.1.5",
-    "npm-check-updates": "^18.0.2",
-    "release-it": "^19.0.4",
+    "globals": "^17.4.0",
+    "jest": "^30.3.0",
+    "lint-staged": "^16.3.3",
+    "npm-check-updates": "^19.6.3",
+    "release-it": "^19.2.4",
     "simple-git-hooks": "^2.13.1"
   }
 }
