@@ -35,15 +35,15 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.3.0",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^9.39.1",
+    "eslint": "^10.1.0",
     "eslint-plugin-import": "^2.32.0",
     "globals": "^17.4.0",
     "jest": "^30.3.0",
-    "lint-staged": "^16.3.3",
-    "npm-check-updates": "^19.6.3",
+    "lint-staged": "^16.4.0",
+    "npm-check-updates": "^19.6.5",
     "release-it": "^19.2.4",
     "simple-git-hooks": "^2.13.1"
   }
