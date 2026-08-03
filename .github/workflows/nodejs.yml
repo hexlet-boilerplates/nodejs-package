@@ -36,7 +36,11 @@ jobs:
       - run: make install
       - run: make lint
       - run: make test-coverage
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v7
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+      # NOTE: uncomment for use it
+      # Requires the hexlet-boilerplates_nodejs-package project in SonarCloud
+      # and a valid SONAR_TOKEN secret
+      # - name: SonarQube Scan
+        # uses: SonarSource/sonarqube-scan-action@v7
+        # env:
+          # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
