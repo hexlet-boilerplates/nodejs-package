@@ -19,7 +19,7 @@ Boilerplate for javascript projects with:
 
 * Javascript (nodejs)
 * Eslint
-* Jest
+* Vitest
 
 For Typescript boilerplate see [typescript-package](https://github.com/hexlet-boilerplates/typescript-package)
 
