@@ -1,11 +1,6 @@
 # nodejs-package
 
 [![Node CI](https://github.com/hexlet-boilerplates/nodejs-package/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-boilerplates/nodejs-package/actions)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=bugs)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=coverage)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=hexlet-boilerplates_nodejs-package&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=hexlet-boilerplates_nodejs-package)
 
 ## Requirements
 
@@ -39,12 +34,14 @@ See other commands in [Makefile](./Makefile)
 
 ## Run tests with coverage
 
-See [sonar-project.properties](./sonar-project.properties#1:2):
-
 ```bash
 make test-coverage
 # see ./coverage
 ```
+
+The coverage threshold is set in [vitest.config.js](./vitest.config.js) — `make test-coverage`
+exits with an error when coverage drops below it, so the Node CI badge above stays green
+only while coverage holds.
 
 ---
 

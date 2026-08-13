@@ -35,12 +35,6 @@ jobs:
           cache: 'npm'
       - run: make install
       - run: make lint
+        # Coverage thresholds live in vitest.config.js — this step fails
+        # when coverage drops below them, so the CI badge reflects coverage too
       - run: make test-coverage
-
-      # NOTE: uncomment for use it
-      # Requires the hexlet-boilerplates_nodejs-package project in SonarCloud
-      # and a valid SONAR_TOKEN secret
-      # - name: SonarQube Scan
-        # uses: SonarSource/sonarqube-scan-action@v7
-        # env:
-          # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
