@@ -1,0 +1,16 @@
+# Что oxfmt не форматирует.
+#
+# oxfmt умеет не только js: без этого списка он переписывает package.json,
+# markdown и yaml воркфлоу. Их ведут другие инструменты, поэтому оставляем
+# oxfmt только js.
+node_modules/
+coverage/
+dist/
+build/
+*.json
+*.jsonc
+*.md
+*.yml
+*.yaml
+*.css
+*.html

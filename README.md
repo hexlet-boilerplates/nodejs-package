@@ -13,7 +13,7 @@
 Boilerplate for javascript projects with:
 
 * Javascript (nodejs)
-* Eslint
+* Oxlint (linter) and Oxfmt (formatter)
 * Vitest
 
 For Typescript boilerplate see [typescript-package](https://github.com/hexlet-boilerplates/typescript-package)
