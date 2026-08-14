@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@vitest/coverage-v8": "^3.2.4",
-    "lint-staged": "^16.3.3",
+    "lint-staged": "^16.4.0",
     "npm-check-updates": "^19.6.3",
     "oxfmt": "^0.63.0",
     "oxlint": "^1.78.0",
