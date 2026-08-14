@@ -1,17 +1,17 @@
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   test: {
-    environment: 'node',
+    environment: "node",
     // Тестовые файлы
-    include: ['**/__tests__/**/*.test.js'],
+    include: ["**/__tests__/**/*.test.js"],
     coverage: {
-      provider: 'v8',
+      provider: "v8",
       // Папка для отчётов
-      reportsDirectory: 'coverage',
-      reporter: ['json', 'lcov', 'text', 'clover'],
+      reportsDirectory: "coverage",
+      reporter: ["json", "lcov", "text", "clover"],
       // Какие файлы включать в покрытие
-      include: ['src/**/*.js'],
+      include: ["src/**/*.js"],
       // Порог покрытия: ниже него `make test-coverage` падает,
       // и сборка в CI краснеет вместе с ним
       thresholds: {
@@ -22,4 +22,4 @@ export default defineConfig({
       },
     },
   },
-})
+});

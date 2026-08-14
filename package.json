@@ -14,7 +14,9 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "lint": "oxlint && oxfmt --ignore-path=.oxfmtignore --check",
+    "lint:fix": "oxfmt --ignore-path=.oxfmtignore && oxlint --fix"
   },
   "repository": {
     "type": "git",
@@ -31,18 +33,17 @@
     "es-toolkit": "^1.45.1"
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": [
+      "oxfmt --ignore-path=.oxfmtignore",
+      "oxlint --fix"
+    ]
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
-    "@eslint/js": "^9.39.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
     "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^9.39.1",
-    "eslint-plugin-import": "^2.32.0",
-    "globals": "^17.4.0",
     "lint-staged": "^16.3.3",
     "npm-check-updates": "^19.6.3",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "release-it": "^21.0.1",
     "simple-git-hooks": "^2.13.1",
     "vitest": "^3.2.4"

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": [
+    "typescript",
+    "unicorn",
+    "oxc",
+    "import",
+    "promise",
+    "node",
+    "jsdoc",
+    "vitest",
+    "react",
+    "react-perf",
+    "jsx-a11y",
+    "vue"
+  ],
+  "categories": {
+    "correctness": "error"
+  },
+  "rules": {},
+  "env": {
+    "builtin": true,
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/npm-cache/**",
+    "**/vendor/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/.venv/**",
+    "**/__snapshots__/**"
+  ]
+}
