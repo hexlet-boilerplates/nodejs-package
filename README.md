@@ -4,17 +4,17 @@
 
 ## Requirements
 
-* Unix system (Macos/Linux)
-* Nodejs 22.x+
-* Make
+- Unix system (Macos/Linux)
+- Nodejs 22.x+
+- Make
 
 ## Description
 
 Boilerplate for javascript projects with:
 
-* Javascript (nodejs)
-* Oxlint (linter) and Oxfmt (formatter)
-* Vitest
+- Javascript (nodejs)
+- Oxlint (linter) and Oxfmt (formatter)
+- Vitest
 
 For Typescript boilerplate see [typescript-package](https://github.com/hexlet-boilerplates/typescript-package)
 
