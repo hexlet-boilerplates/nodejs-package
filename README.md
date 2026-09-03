@@ -39,9 +39,7 @@ make test-coverage
 # see ./coverage
 ```
 
-The coverage threshold is set in [vitest.config.js](./vitest.config.js) — `make test-coverage`
-exits with an error when coverage drops below it, so the Node CI badge above stays green
-only while coverage holds.
+The coverage threshold is set in [vitest.config.js](./vitest.config.js) — `make test-coverage` exits with an error when coverage drops below it, so the Node CI badge above stays green only while coverage holds.
 
 ---
 
