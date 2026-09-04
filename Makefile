@@ -17,10 +17,10 @@ test-coverage:
 	npm test -- --coverage
 
 lint:
-	npx oxlint && npx oxfmt --ignore-path=.oxfmtignore --check
+	npx oxlint && npx oxfmt --check
 
 lint-fix:
-	npx oxfmt --ignore-path=.oxfmtignore && npx oxlint --fix
+	npx oxfmt && npx oxlint --fix
 
 publish:
 	npx release-it

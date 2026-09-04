@@ -15,8 +15,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "oxlint && oxfmt --ignore-path=.oxfmtignore --check",
-    "lint:fix": "oxfmt --ignore-path=.oxfmtignore && oxlint --fix"
+    "lint": "oxlint && oxfmt --check",
+    "lint:fix": "oxfmt && oxlint --fix"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "oxfmt --ignore-path=.oxfmtignore",
+      "oxfmt",
       "oxlint --fix"
     ]
   },
