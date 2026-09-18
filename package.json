@@ -39,13 +39,13 @@
     ]
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^5.0.0",
+    "@vitest/coverage-v8": "^5.0.1",
     "lint-staged": "^17.3.0",
     "npm-check-updates": "^23.0.2",
-    "oxfmt": "^0.63.0",
-    "oxlint": "^1.78.0",
+    "oxfmt": "^0.68.0",
+    "oxlint": "^1.83.0",
     "release-it": "^21.0.2",
-    "simple-git-hooks": "^2.13.1",
+    "simple-git-hooks": "^2.14.0",
     "vitest": "^5.0.0"
   }
 }
