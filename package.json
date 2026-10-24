@@ -26,9 +26,6 @@
   },
   "type": "module",
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
-  "dependencies": {
-    "es-toolkit": "^1.52.0"
-  },
   "devDependencies": {
     "@vitest/coverage-v8": "^5.0.5",
     "npm-check-updates": "^23.1.1",
