@@ -22,7 +22,4 @@ lint:
 lint-fix:
 	npx oxfmt && npx oxlint --fix
 
-publish:
-	npx release-it
-
 .PHONY: test
