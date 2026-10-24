@@ -1,0 +1,11 @@
+amends "package://github.com/jdx/hk/releases/download/v2.8.0/hk@2.8.0#/Config.pkl"
+
+hooks {
+    ["pre-push"] {
+        steps {
+            ["lint"] {
+                check = "make lint"
+            }
+        }
+    }
+}

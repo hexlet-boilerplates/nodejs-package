@@ -33,6 +33,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      # Ставит hk для git-хуков, его вызывает make install
+      - uses: jdx/mise-action@v5
       - run: make install
       - run: make lint
         # Coverage thresholds live in vitest.config.js — this step fails

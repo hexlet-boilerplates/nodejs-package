@@ -1,5 +1,5 @@
 install: deps-install
-	npx simple-git-hooks
+	mise exec -- hk install --mise
 
 run:
 	bin/nodejs-package.js 10

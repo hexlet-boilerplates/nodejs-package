@@ -7,6 +7,7 @@
 - Unix system (Macos/Linux)
 - Nodejs 22.x+
 - Make
+- [mise](https://mise.jdx.dev), он ставит `hk` для git-хуков
 
 ## Description
 
