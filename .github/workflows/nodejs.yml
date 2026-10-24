@@ -19,10 +19,11 @@ jobs:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
       - uses: actions/checkout@v7
-      # Ставит Node и hk из mise.toml, hk нужен для git-хуков в make install
+      # Ставит Node и hk из mise.toml
       - uses: jdx/mise-action@v5
       - run: make install
-      - run: make lint
+      # Те же шаги, что в git-хуке: hk.pkl
+      - run: mise exec -- hk check --all
         # Coverage thresholds live in vitest.config.js — this step fails
         # when coverage drops below them, so the CI badge reflects coverage too
       - run: make test-coverage

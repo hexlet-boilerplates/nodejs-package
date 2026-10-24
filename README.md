@@ -24,6 +24,8 @@ For Typescript boilerplate see [typescript-package](https://github.com/hexlet-bo
 make install
 ```
 
+Команда `make install` ставит и git-хуки через hk.
+
 ## Run tests
 
 ```bash
