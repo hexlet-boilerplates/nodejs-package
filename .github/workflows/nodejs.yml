@@ -3,22 +3,34 @@ name: Node CI
 
 # Trigger the workflow on push or pull request
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
+  pull_request:
 
 env:
   CI: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
 
     # The type of machine to run the job on
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       # Ставит Node и hk из mise.toml
       - uses: jdx/mise-action@v5
       - run: make install

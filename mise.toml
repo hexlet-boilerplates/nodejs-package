@@ -3,3 +3,8 @@
 node = "latest"
 hk = "latest"
 pkl = "latest"
+# Проверки документации и workflow, jactionlint вызывает shellcheck для блоков run
+rumdl = "latest"
+typos = "latest"
+jactionlint = "latest"
+shellcheck = "latest"

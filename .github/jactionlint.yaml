@@ -1,0 +1,5 @@
+rules:
+  unpinned-uses:
+    # Экшены ссылаются на мажорные теги, обновляет их dependabot
+    policies:
+      "*": ref-pin

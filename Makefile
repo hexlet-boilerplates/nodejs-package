@@ -18,6 +18,9 @@ test-coverage:
 
 lint:
 	npx oxlint && npx oxfmt --check
+	rumdl check .
+	typos
+	jactionlint
 
 lint-fix:
 	npx oxfmt && npx oxlint --fix
