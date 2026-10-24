@@ -1,0 +1,7 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema-jsonc.json",
+  "ignoreDependencies": [
+    // Запускается руками через make deps-update (npx ncu -u), в коде не импортируется
+    "npm-check-updates"
+  ]
+}

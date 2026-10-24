@@ -21,8 +21,13 @@ lint:
 	rumdl check .
 	typos
 	jactionlint
+	$(MAKE) --no-print-directory knip
 
 lint-fix:
 	npx oxfmt && npx oxlint --fix
 
-.PHONY: test
+# Только отчёт, без --fix: находки решает человек
+knip:
+	npx knip
+
+.PHONY: test knip
