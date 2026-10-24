@@ -5,9 +5,8 @@
 ## Requirements
 
 - Unix system (Macos/Linux)
-- Nodejs 22.x+
 - Make
-- [mise](https://mise.jdx.dev), он ставит `hk` для git-хуков
+- [mise](https://mise.jdx.dev), он ставит Node.js и `hk` для git-хуков (версии в `mise.toml`)
 
 ## Description
 

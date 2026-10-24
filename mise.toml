@@ -1,4 +1,5 @@
-# Инструменты для git-хуков. Хук pre-push запускает `make lint` (hk.pkl).
+# Инструменты проекта. hk ставит git-хуки (hk.pkl), хук pre-push запускает `make lint`.
 [tools]
+node = "latest"
 hk = "latest"
 pkl = "latest"
