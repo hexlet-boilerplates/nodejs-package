@@ -32,7 +32,7 @@
   "devDependencies": {
     "@vitest/coverage-v8": "^5.0.0",
     "npm-check-updates": "^23.0.2",
-    "oxfmt": "^0.63.0",
+    "oxfmt": "^0.72.0",
     "oxlint": "^1.78.0",
     "release-it": "^21.0.2",
     "vite": "^8.3.5",
