@@ -15,4 +15,4 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: hexlet-components/shared-workflows/.github/workflows/dependabot-automerge.yml@main
+    uses: hexlet-components/shared-workflows/.github/workflows/dependabot-automerge.yml@7b84d02d32ddeb634561cae27bdb8e4d77a43867 # v1.0.0
