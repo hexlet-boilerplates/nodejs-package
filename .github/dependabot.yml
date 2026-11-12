@@ -1,20 +1,38 @@
 version: 2
-multi-ecosystem-groups:
-  all-dependencies:
-    schedule:
-      interval: weekly
 updates:
   - package-ecosystem: github-actions
     directory: /
-    patterns:
-      - "*"
-    multi-ecosystem-group: all-dependencies
+    schedule:
+      interval: weekly
     cooldown:
       default-days: 7
+    groups:
+      github-actions-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+      github-actions-major:
+        patterns:
+          - "*"
+        update-types:
+          - major
   - package-ecosystem: npm
     directory: /
-    patterns:
-      - "*"
-    multi-ecosystem-group: all-dependencies
+    schedule:
+      interval: weekly
     cooldown:
       default-days: 7
+    groups:
+      npm-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+      npm-major:
+        patterns:
+          - "*"
+        update-types:
+          - major
